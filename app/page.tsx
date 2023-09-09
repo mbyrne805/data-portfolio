@@ -20,8 +20,9 @@ export default async function HomePage() {
     <>
       <div className={styles.heading}>
         <span className={styles.headingText}>
-          <h1>Max Leiter</h1>
-          <h2>Full-stack developer</h2>
+          <h1>Matt Byrne</h1>
+          <h2>Software Developer</h2>
+          <h2>Environmental Data Analyst</h2>
         </span>
         <Socials />
       </div>
@@ -29,7 +30,7 @@ export default async function HomePage() {
       <AboutMe />
       <h3>My projects</h3>
       <ProjectList
-        showYears={false}
+        showYears={true}
         count={PROJECT_COUNT}
         projects={projects}
       />
@@ -40,20 +41,6 @@ export default async function HomePage() {
       <footer className={styles.footer}>
         <span>
           <Link href="/about">About this site</Link>
-          {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA ? (
-            <>
-              {' '}
-              &mdash;{' '}
-              <Link
-                external
-                href={`https://github.com/maxleiter/maxleiter.com/commit/${process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA}`}
-              >
-                {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA.slice(0, 7)}
-              </Link>
-            </>
-          ) : (
-            <> &mdash; some git SHA</>
-          )}
         </span>
         <TimeOfDay />
       </footer>

@@ -3,16 +3,7 @@ import Link from '@components/link'
 const AboutMe = () => (
   <>
     <p>
-      I&apos;ve previously worked at{' '}
-      <Link href="https://www.blend.com" external>
-        Blend
-      </Link>{' '}
-      and am currently building at{' '}
-      <Link href="https://vercel.com" external>
-        Vercel
-      </Link>
-      . I&apos;m interested in politics, tech, and building a fast, accessible
-      web.
+      {'Currently pursuing an MS in Computer Science (Machine Learning spec.) at Georgia Tech. Interested in applying advanced computing, intelligent algorithms, algorithmic intelligence, and data science to environmental problems.'}
     </p>
     {/* <p>
       You can view a list of talks I recommend watching or listening to on{' '}

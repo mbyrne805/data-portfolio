@@ -36,7 +36,7 @@ export const getPosts = cache(async (includeThirdPartyPosts?: boolean) => {
   const postsWithMetadata = await Promise.all(
     posts
       .filter(
-        (file) => path.extname(file) === '.md' || path.extname(file) === '.mdx'
+        (file) => path.extname(file) === '.md' || path.extname(file) === '.mdx' || path.extname(file) === '.rmd'
       )
       .map(async (file) => {
         const filePath = `./posts/${file}`

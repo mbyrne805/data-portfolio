@@ -1,7 +1,6 @@
 import Link from '@components/link'
-
 import styles from './socials.module.css'
-import { GitHub, Twitter, Mail, RSS } from '@components/icons'
+import { GitHub, Mail } from '@components/icons'
 import Tooltip from '@components/tooltip'
 import ThemeSwitcher from '@components/theme-switcher'
 
@@ -26,24 +25,14 @@ const Socials = () => {
     <div className={styles.socials}>
       <ThemeSwitcher />
       <SocialButton
-        href="https://github.com/maxleiter"
+        href="https://github.com/mbyrne510"
         icon={<GitHub strokeWidth={2} />}
         tooltip="GitHub"
-      />
-      <SocialButton
-        href="https://twitter.com/max_leiter"
-        icon={<Twitter strokeWidth={2} />}
-        tooltip="Twitter"
       />
       <SocialButton
         href="mailto:maxwell.leiter@gmail.com"
         icon={<Mail strokeWidth={2} />}
         tooltip="Email"
-      />
-      <SocialButton
-        href="/feed.xml"
-        icon={<RSS strokeWidth={2} />}
-        tooltip="RSS"
       />
     </div>
   )

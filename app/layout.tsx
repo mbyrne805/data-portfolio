@@ -26,10 +26,10 @@ export default function RootLayout({
 }
 
 export const metadata = {
-  metadataBase: new URL('https://maxleiter.com'),
+  metadataBase: new URL('https://mattbyrne.com'),
   title: {
     template: '%s | Max Leiter',
-    default: 'Max Leiter',
+    default: 'Matt Byrne',
   },
   description: 'Full-stack developer. My blog, projects, and more.',
   keywords:

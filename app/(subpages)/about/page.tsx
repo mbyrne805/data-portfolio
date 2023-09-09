@@ -1,12 +1,12 @@
 import Link from '@components/link'
 
-export const metadata = {
-  title: 'About',
-  description: 'About this website.',
-  alternates: {
-    canonical: 'https://maxleiter.com/about',
-  },
-}
+// export const metadata = {
+//   title: 'About',
+//   description: 'About this website.',
+//   alternates: {
+//     canonical: 'https://maxleiter.com/about',
+//   },
+// }
 
 const About = () => {
   return (

@@ -45,4 +45,10 @@ const nextConfig = {
 
 export default withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
+  rewrites: async () => [
+    {
+      source: "/public/myfile.html",
+      destination: "/pages/api/myfile.js"
+    }
+  ]
 })(nextConfig)

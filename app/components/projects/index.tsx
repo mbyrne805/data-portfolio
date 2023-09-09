@@ -27,7 +27,6 @@ const Projects = ({ count = -1, projects = [], showYears = true }: Props) => {
             title={e.title}
             description={e.description}
             role={e.role}
-            stars={e.stars}
           />
         )
       })}

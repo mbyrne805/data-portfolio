@@ -3,7 +3,6 @@ import NextImage from 'next/image'
 // import Link from '@components/link'
 import { MDXNote } from './mdx-note'
 import { Code } from 'bright'
-import { MDXImage } from './mdx-image'
 import Info from '@components/icons/info'
 import { FileTree, File, Folder } from '@components/file-tree'
 import Home from '@components/icons/home'
@@ -44,9 +43,6 @@ export const mdxComponents: MDXComponents = {
       </Code>
     )
   },
-  // @ts-expect-error types
-  img: MDXImage,
-  // @ts-expect-error types
   Image: NextImage,
   Details: ({
     children,
@@ -70,11 +66,8 @@ export const mdxComponents: MDXComponents = {
   HomeIcon: Home,
 
   // file tree
-  // @ts-expect-error types
   FileTree,
-  // @ts-expect-error types
   File,
-  // @ts-expect-error types
   Folder,
 
   Tweet: (props) => (

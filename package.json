@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "concurrently \"pnpm:build-*\"",
     "build-next": "next build",
-    "build-rss": "ts-node --project ./node.tsconfig.json scripts/rss",
     "analyze": "ANALYZE=true pnpm build-next",
     "start": "next start"
   },

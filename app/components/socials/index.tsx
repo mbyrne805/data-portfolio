@@ -30,7 +30,7 @@ const Socials = () => {
         tooltip="GitHub"
       />
       <SocialButton
-        href="mailto:maxwell.leiter@gmail.com"
+        href="mailto:mattbyrne805@gmail.com"
         icon={<Mail strokeWidth={2} />}
         tooltip="Email"
       />
